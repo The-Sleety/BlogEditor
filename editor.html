@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sleety's devlog</title>
+  <link rel="stylesheet" href="https://unpkg.com/xp.css">
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div id="content">
+    <aside id="sidebar" class="window" style="width: 400px; height: 500px;">
+        <div class="title-bar">
+            <div class="title-bar-text">aboutMe.exe</div>
+        </div>
+        <img src="/img/pfp.png" alt="pfp" style="border-radius: 50%; display: block; margin-left: 95px; margin-top: 10px; width: auto;">
+        <a style="font-size:xx-large; margin-left: 28.5%; color: black;">About Me</a>
+        <p style="font-size: large;padding:5%;margin-left: 10px; text-decoration: none;" class="abourmetext">Hello, i'm Bora (a.k.a Sleety). I'm a game and a web developer. I make websites for fun, i wanted to make a blog website to write my devlogs and blogs to and i finially did it. You may ask "Why WindowsXP theme" and my answer is... Idk, i like the nostalgia of the os.Anyway good bye.</p>
+    </aside>
+    <main id="main">        
+        <div class="window" style="width: auto;">
+            <div class="title-bar">
+              <div class="title-bar-text" contenteditable="true" id="windowTitle"></div>
+              <div class="title-bar-controls">
+                <button aria-label="Minimize"></button>
+                <button aria-label="Maximize"></button>
+                <button aria-label="Close"></button>
+              </div>
+            </div>
+            <div class="window-body">
+              <!-- Inside the <div class="window-body"> -->
+              <div class="content-menu">
+                <button onclick="addParagraph()">Add Paragraph</button>
+                <button onclick="addLink()">Add Link</button>
+                <button onclick="addVideo()">Add Video</button>
+                <button onclick="addYouTubeVideo()">Add YT Video</button>
+                <button onclick="addIframe()">Add Iframe</button>
+                <button onclick="addImage()">Image</button>
+                <button onclick="exportDevlog()">Export</button>
+              </div>
+              <div class="blog">
+                <h3 contenteditable="true" id="devlogTitle"></h3>
+                <div contenteditable="true" id="devlogContent" style="font-size: large;"></div>
+              </div>
+            </div>
+        </div>
+    </main>
+  </div>
+  <script src="editor.js"></script>
+</body>
+</html>

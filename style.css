@@ -1,0 +1,103 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url(/img/background.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-color: rgb(51, 66, 22);
+  }
+  
+  #content {
+    display: flex;
+  }
+  
+  #sidebar {
+    width: 25%;
+    background-color: #f1f1f1;
+    height: 300vh;
+  }
+
+
+  #main {
+    width: 75%;
+    padding: 20px;
+  }
+  
+  .window{
+    margin: 15px;
+  }
+
+  .blog {
+    margin-bottom: 20px;
+    padding: 10px;
+  }
+  
+  #navbar {
+    background-image: url(/img/winxp.jpeg);
+    color: #fff;
+    padding: 6.5px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+  }
+  
+  #navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  #navbar ul li {
+    display: inline;
+    margin-right: 10px;
+  }
+  
+  #navbar ul li a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .abourmetext{
+    overflow: hidden;
+    box-sizing: content-box;
+    width: 290px;
+    line-height: 20px;
+    font-family: Helvetica, sans-serif;
+    max-lines: 3;
+  }
+  .content-menu {
+    position: fixed; /* Ensures the menu stays in a fixed position */
+    bottom: 20px; /* Adjust as needed to position the menu */
+    left: 50%; /* Positions the menu in the middle horizontally */
+    transform: translateX(-50%); /* Centers the menu horizontally */
+    background-color: rgba(255, 255, 255, 0.7); /* Semi-transparent white background */
+    padding: 10px; /* Add padding to the menu */
+    border-radius: 5px; /* Adds rounded corners to the menu */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adds a subtle shadow effect */
+  }
+  
+  .content-menu button {
+    margin: 5px; /* Add some spacing between buttons */
+  }
+
+  /* Add this to your CSS file or within a <style> tag in your HTML */
+.resizer {
+  width: 10px;
+  height: 10px;
+  background-color: #fff;
+  border: 1px solid #000;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  cursor: se-resize;
+}
+
+#blog {
+  position: relative;
+  overflow: auto;
+}
+#devlogContent p {
+  font-size: large;
+}
